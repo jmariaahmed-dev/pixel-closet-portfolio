@@ -13,7 +13,7 @@ The project presents weekly creative coding tasks (Weeks 1–10) as part of a si
 ---
 
 ## Repository Structure
-
+```
 /
 ├── index.html # Main portfolio website
 ├── style.css # Global styling
@@ -32,7 +32,7 @@ The project presents weekly creative coding tasks (Weeks 1–10) as part of a si
 ├── documentation.md # Project documentation & reflection
 └── documentation-images/ # Screenshots used in documentation
 
-
+```
 ---
 
 ## Technologies Used
