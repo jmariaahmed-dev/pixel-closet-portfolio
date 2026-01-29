@@ -23,7 +23,7 @@ The website is published online using GitHub Pages, with all weekly tasks access
 
 ## 2. Design Process & Ideation
 
-![Overall site layout](documentation-images/site-overview.png)
+![Overall site layout](documentation-images/site-overview)
 Link to website: https://jmariaahmed-dev.github.io/pixel-closet-portfolio/
 
 The visual direction of the project was inspired by:
@@ -44,7 +44,7 @@ The homepage introduces the project concept, while the “Weekly Journey” sect
 
 ### 3.1 Lighthouse Accessibility Audit
 
-![Lighthouse accessibility score](documentation-images/lighthouse-accessibility.png.png)
+![Lighthouse accessibility score](documentation-images/lighthouse-accessibility)
 
 Accessibility was evaluated using the Chrome DevTools Lighthouse audit, focusing on the **Accessibility** category.
 
@@ -129,7 +129,7 @@ Learning outcomes:
 
 ## Week 5 – Design & Accessibility (Figma)
 
-![Week 5 Figma design](documentation-images/week5-figma.png)
+![Week 5 Figma design](documentation-images/week5-figma)
 Link to figma project: https://www.figma.com/design/MGcf03JXj8sb3tazIYHyxD/Untitled?node-id=0-1&p=f&t=znjmNpATG748Y79s-0
 
 Week 5 focused on design planning and accessibility.  
@@ -170,7 +170,7 @@ Learning outcomes:
 
 ## Week 8 – Motion & Animation
 
-![Week 8 motion example](documentation-images/week8-motion.png)
+![Week 8 motion example](documentation-images/week8-motion)
 
 Week 8 explored animation and motion using JavaScript libraries.  
 Motion was used to guide attention and create a more engaging interface without overwhelming the user.
