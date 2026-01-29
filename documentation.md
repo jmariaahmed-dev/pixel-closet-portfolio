@@ -244,3 +244,25 @@ Working with tools such as Figma, GSAP, Three.js, and Node.js (via npm and Vite)
 
 Overall, this project reflects both my technical growth and my interest in blending creative aesthetics with interactive web design. Maria’s Pixel Closet functions not only as an assessment submission, but as a flexible portfolio framework that I can continue to expand beyond this unit.
 
+## References
+
+## Code & Learning Resources References
+
+The following external libraries and documentation were used throughout this project.  
+All implementations were adapted and integrated into my own code structure.
+
+- AOS (Animate On Scroll)  
+  https://michalsnik.github.io/aos/
+
+- canvas-confetti  
+  https://www.npmjs.com/package/canvas-confetti
+
+- Three.js  
+  https://threejs.org/docs/
+
+- MDN Web Docs (HTML, CSS, JavaScript reference)  
+  https://developer.mozilla.org/
+
+- GSAP Documentation  
+  https://greensock.com/docs/
+
