@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #fff0f6;
+  color: #2b1a1f;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 640px;
+  text-align: center;
+  padding: 32px;
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #7a6a73;
+  margin-bottom: 24px;
+}
+
+/* Clock styling */
+.clock {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+  color: #ff6fb1;
+}
+
+/* Typewriter container */
+.typewriter-box {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid #f3c6da;
+  min-height: 140px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Blinking cursor */
+#typewriter::after {
+  content: "▍";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

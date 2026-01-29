@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maria's Pixel Closet</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header" data-aos="fade-down">
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-brand">
+      <span class="logo-text">Maria's Pixel Closet</span>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+      ☰
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#shop">Shop My Looks</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section id="hero" class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <p class="hero-tagline">Welcome to</p>
+      <h1>Maria's Pixel Closet</h1>
+      <p class="hero-subtitle">
+        Swipe through outfits, pixels and projects — one look at a time ✨
+      </p>
+      <a href="#shop" class="btn btn-primary">Enter the Closet</a>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/doodle_main.png" alt="Maria doodle" class="hero-avatar">
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="music-controls">
+    <button class="btn btn-music" id="music-toggle" aria-pressed="false">
+      ♫ Play Closet Theme
+    </button>
+    <audio id="bg-music" src="assets/closet-theme.wav" loop></audio>
+  </section>
+
+  <!-- SHOP / LOOKS -->
+  <section id="shop" class="shop">
+    <header class="section-header">
+      <h2>Shop My Looks (Projects)</h2>
+      <p class="section-subtitle">
+        Each look is a project from my creative coding wardrobe 💖
+      </p>
+    </header>
+
+    <div class="shop-filters">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="html">HTML Basics</button>
+      <button class="filter-btn" data-filter="css">CSS Couture</button>
+      <button class="filter-btn" data-filter="js">JS Magic</button>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card" data-category="html">
+        <img src="assets/look1-placeholder.png" alt="Preview of Look #01 project" />
+        <div class="project-body">
+          <h3>Look #01 – HTML Starter Fit</h3>
+          <button class="btn btn-secondary view-project" data-project-id="1">
+            View Look
+          </button>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="css">
+        <img src="assets/look2-placeholder.png" alt="Preview of Look #02 project" />
+        <div class="project-body">
+          <h3>Look #02 – CSS Couture Layout</h3>
+          <button class="btn btn-secondary view-project" data-project-id="2">
+            View Look
+          </button>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="js">
+        <img src="assets/look3-placeholder.png" alt="Preview of Look #03 project" />
+        <div class="project-body">
+          <h3>Look #03 – JS Magic Sparkle</h3>
+          <button class="btn btn-secondary view-project" data-project-id="3">
+            View Look
+          </button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- WEEKLY JOURNEY -->
+  <section id="weekly-journey" class="weekly-journey">
+    <header class="section-header">
+      <h2>My Weekly Journey</h2>
+      <p class="section-subtitle">Swipe through Weeks 1–10 ✨</p>
+    </header>
+
+    <div class="carousel-container">
+      <div class="carousel-track">
+
+        <a href="week_1/index.html" class="week-card">
+          Week 1<br><span>HTML Starter Fit</span>
+        </a>
+
+        <a href="week_2/index.html" class="week-card">
+          Week 2<br><span>Hyperlink Time Machine</span>
+        </a>
+
+        <a href="week_3/index.html" class="week-card">
+          Week 3<br><span>CSS Self-Portrait</span>
+        </a>
+
+        <a href="week_4/index.html" class="week-card">
+          Week 4<br><span>Layouts & Responsive</span>
+        </a>
+
+        <a href="week_5/index.html" class="week-card">
+          Week 5<br><span>Design & Accessibility</span>
+        </a>
+
+        <a href="week_6/index.html" class="week-card">
+          Week 6<br><span>DOM & Interactions</span>
+        </a>
+
+        <a href="week_7/index.html" class="week-card">
+          Week 7<br><span>Events & UX</span>
+        </a>
+
+        <a href="week_8/index.html" class="week-card">
+          Week 8<br><span>Motion with GSAP</span>
+        </a>
+
+        <a href="week-9-vite/dist/index.html" class="week-card">
+          Week 9<br><span>Node, npm & Vite</span>
+        </a>
+
+        <a href="week_10/index.html" class="week-card">
+          Week 10<br><span>Three.js Scene</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (UNCHANGED) -->
+  <section id="about" class="about" data-aos="fade-up">
+    <header class="section-header">
+      <h2>About Maria</h2>
+      <p class="section-subtitle">The girl behind the avatar ♡</p>
+    </header>
+
+    <div class="about-content">
+      <div class="about-avatar">
+        <img src="assets/doodle_chibi.png" alt="Chibi Maria doodle" class="about-chibi">
+      </div>
+
+      <div class="about-text">
+        <p>
+          Hi, I’m Maria — a creative computing student who loves mixing
+          cute aesthetics, fashion-game vibes and front-end code. Maria’s
+          Pixel Closet is my interactive wardrobe of weekly projects and
+          experiments.
+        </p>
+        <p>
+          I’m inspired by early 2000s cartoon styles, and I use this world
+          to present my web development work in a playful, immersive way.
+        </p>
+
+        <ul class="about-stats">
+          <li>HTML: ★★★★☆</li>
+          <li>Javascript: ★★★★☆</li>
+          <li>CSS: ★★★☆☆</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (UNCHANGED) -->
+  <section id="contact" class="contact" data-aos="zoom-in">
+    <header class="section-header">
+      <h2>Contact the Code Designer</h2>
+      <p class="section-subtitle">Want to see more looks or view the code?</p>
+    </header>
+
+    <div class="contact-content">
+      <ul>
+        <li>
+          GitHub:
+          <a href="#" id="github-link" target="_blank" rel="noopener">
+            View my repositories
+          </a>
+        </li>
+        <li>
+          Email:
+          <a href="mailto:example@example.com">example@example.com</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Maria's Pixel Closet. Built for Coding 3 – Web Development Studio.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

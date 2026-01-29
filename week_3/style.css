@@ -1,0 +1,165 @@
+body {
+  background: #ffd9ec;
+  font-family: 'Baloo 2', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+
+/* --- Portrait Container --- */
+.portrait {
+  position: relative;
+  width: 260px;
+  height: 330px;
+  margin: 0 auto;
+}
+
+/* --- Hair Back --- */
+.hair-back {
+  position: absolute;
+  width: 260px;
+  height: 300px;
+  background: #000;
+  border-radius: 140px 140px 120px 120px;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+}
+
+/* --- Face --- */
+.face {
+  position: absolute;
+  width: 180px;
+  height: 210px;
+  background: #b6794d;
+  border-radius: 50% / 55%;
+  top: 55px;
+  left: 40px;
+  z-index: 2;
+}
+
+/* --- Eyes --- */
+.eye {
+  position: absolute;
+  width: 36px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50px;
+  top: 70px;
+}
+
+.left-eye { left: 25px; }
+.right-eye { right: 25px; }
+
+/* Pupils */
+.eye::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #000;
+  border-radius: 50%;
+  top: 4px;
+  left: 10px;
+}
+
+/* --- Lashes --- */
+.lash {
+  position: absolute;
+  width: 22px;
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+  top: 62px;
+}
+
+.l1 { left: 18px; transform: rotate(-12deg); }
+.l2 { left: 18px; top: 82px; transform: rotate(12deg); }
+
+.r1 { right: 18px; transform: rotate(12deg); }
+.r2 { right: 18px; top: 82px; transform: rotate(-12deg); }
+
+/* --- Nose --- */
+.nose {
+  position: absolute;
+  width: 22px;
+  height: 14px;
+  background: #9b6037;
+  border-radius: 50%;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- Lips --- */
+.lips {
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  background: #ff75b8;
+  border-radius: 30px;
+  top: 145px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- Earrings (gold) --- */
+.earring {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: gold;
+  border-radius: 50%;
+  top: 150px;
+}
+
+.left-earring { left: -10px; }
+.right-earring { right: -10px; }
+
+/* --- Hair Front (middle part) --- */
+.hair-front {
+  position: absolute;
+  width: 260px;
+  height: 180px;
+  background: #000;
+  border-radius: 140px 140px 0 0;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+/* Character Stats Box */
+.portrait-info {
+  width: 350px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.portrait-info h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Baloo 2', cursive;
+  color: #333;
+}
+
+.portrait-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.portrait-info li {
+  color: #444;
+}

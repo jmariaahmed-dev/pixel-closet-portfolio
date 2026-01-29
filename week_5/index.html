@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 5 — Design & Accessibility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Maria’s Pixel Closet</h1>
+    <p class="subtitle">Week 5 — Design, Accessibility & Responsive Planning</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>
+        Before coding, this project was planned in Figma to explore layout,
+        accessibility, responsive breakpoints, and light/dark colour modes.
+      </p>
+    </section>
+
+    <section class="figma-card">
+      <h2>🧩 Blueprint of the Closet</h2>
+      <p>
+        This Figma file shows the structural blueprint of Maria’s Pixel Closet
+        across desktop, tablet, and mobile screens, including light and dark modes.
+      </p>
+
+      <a
+        href="https://www.figma.com/design/MGcf03JXj8sb3tazIYHyxD/Untitled?node-id=0-1&t=PkSZAFRwgWsGd64f-1"
+        target="_blank"
+        class="figma-link"
+      >
+        View the Closet Blueprint →
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Week 5 — Visual planning before implementation</p>
+  </footer>
+
+  <!-- subtle interaction -->
+  <script>
+    const card = document.querySelector(".figma-card");
+
+    card.addEventListener("mouseenter", () => {
+      card.classList.add("hovered");
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.classList.remove("hovered");
+    });
+  </script>
+</body>
+</html>

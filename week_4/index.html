@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 4 – Layouts & Responsive Design</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --pink:#b32787;
+      --soft:#fff0f8;
+      --ink:#222;
+      --muted:#5c5c5c;
+      --card:#ffffff;
+      --line:#ffd1ea;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:"Nunito", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:linear-gradient(180deg, #fff7fc, #ffffff);
+    }
+
+    .wrap{
+      width:min(1000px, 100%);
+      margin:0 auto;
+      padding:24px;
+    }
+
+    header{
+      background:var(--soft);
+      border-bottom:1px solid var(--line);
+    }
+
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:18px 0;
+    }
+
+    .title{
+      margin:0;
+      font-family:"Baloo 2", cursive;
+      color:var(--pink);
+      font-size:clamp(28px, 4vw, 40px);
+      line-height:1.05;
+    }
+
+    .subtitle{
+      margin:6px 0 0;
+      color:var(--muted);
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--line);
+      font-weight:600;
+      color:var(--pink);
+      white-space:nowrap;
+    }
+
+    /* GRID LAYOUT */
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px;
+      box-shadow:0 8px 24px rgba(0,0,0,0.04);
+    }
+
+    .card h2{
+      margin:0 0 10px;
+      color:var(--pink);
+      font-size:18px;
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .chip{
+      padding:8px 10px;
+      border-radius:999px;
+      background:var(--soft);
+      border:1px solid var(--line);
+      font-size:14px;
+    }
+
+    /* FLEXBOX: card row */
+    .examples{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
+    .mini{
+      flex:1 1 180px;
+      border-radius:14px;
+      padding:14px;
+      border:1px dashed var(--line);
+      background:#fff;
+    }
+
+    .mini strong{
+      display:block;
+      color:var(--pink);
+      margin-bottom:6px;
+    }
+
+    a{
+      color:var(--pink);
+      text-decoration-thickness:2px;
+      text-underline-offset:3px;
+    }
+
+    footer{
+      margin-top:22px;
+      padding:18px 0 10px;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 860px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
+      .badge{
+        align-self:flex-start;
+      }
+      .top{
+        align-items:flex-start;
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <h1 class="title">Week 4 — Layouts & Responsive Design</h1>
+          <p class="subtitle">Flexbox + Grid + media queries (with planning in Figma)</p>
+        </div>
+        <div class="badge">✅ Grid + Flexbox + Responsive</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="grid">
+
+      <article class="card">
+        <h2>What I built (this page)</h2>
+        <p>
+          This page is my Week 4 evidence. The overall layout uses <strong>CSS Grid</strong>
+          (two columns on desktop) and the small content blocks below use <strong>Flexbox</strong>.
+          A <strong>media query</strong> switches the layout to one column on smaller screens.
+        </p>
+
+        <div class="examples" aria-label="Layout examples">
+          <div class="mini">
+            <strong>Grid</strong>
+            Used for the main two-column structure.
+          </div>
+          <div class="mini">
+            <strong>Flexbox</strong>
+            Used for these mini blocks and spacing.
+          </div>
+          <div class="mini">
+            <strong>Media Query</strong>
+            Collapses to a single column on mobile.
+          </div>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Week 4 checklist</h2>
+        <ul class="chips">
+          <li class="chip">✅ Grid columns + gap</li>
+          <li class="chip">✅ Flex alignment</li>
+          <li class="chip">✅ Responsive breakpoint</li>
+          <li class="chip">✅ Figma columns link</li>
+        </ul>
+
+        <p style="margin-top:12px;">
+          <strong>Figma link:</strong>
+          <a href="https://www.figma.com/design/PyS2rYMLuoQfwjuRcoNJ2T/Week-4-%E2%80%93-Layout---Responsive-Wireframe?node-id=0-1&t=LKBy4A3zSiP73REQ-1" target="_blank" rel="noopener">
+            View Figma layout
+          </a>
+        </p>
+
+
+      </aside>
+
+    </section>
+
+    <section class="card" style="margin-top:18px;">
+      <h2>Reflection</h2>
+      <p>
+        This week focused on structuring layouts using <strong>Grid</strong> for page-level design and
+        <strong>Flexbox</strong> for component alignment. I learned how small changes to
+        <code>grid-template-columns</code>, <code>gap</code>, and Flex properties can
+        dramatically improve clarity and spacing.
+      </p>
+      <p>
+        I also started planning with a <strong>column system in Figma</strong>, which helped me think about
+        responsive behaviour before coding. Next, I want to refine spacing and test on multiple screen sizes
+        to make sure the layout stays consistent.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="wrap">
+    <p>Maria’s Pixel Closet — Week 4</p>
+  </footer>
+
+</body>
+</html>

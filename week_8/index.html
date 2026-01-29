@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Week 8 — GSAP Motion Lab</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <main class="container">
+    <h1>Maria’s Pixel Closet</h1>
+    <p class="subtitle">Week 8 — Motion, Timing & Control</p>
+
+    <!-- Mini Exercise 1 -->
+    <section>
+      <h2>Button-Controlled Motion</h2>
+      <button id="moveBtn">Move Box</button>
+      <div class="box" id="box1"></div>
+    </section>
+
+    <!-- Mini Exercise 2 -->
+    <section>
+      <h2>GSAP Timeline</h2>
+
+      <div class="box" id="box2"></div>
+
+      <div class="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="reverse">Reverse</button>
+      </div>
+    </section>
+
+    <!-- ScrollTrigger -->
+    <section class="scroll-section">
+      <h2>Scroll-Based Motion</h2>
+      <div class="box" id="box3"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

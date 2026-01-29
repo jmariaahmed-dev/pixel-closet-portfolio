@@ -1,0 +1,64 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fff0f6;
+  color: #2b1a1f;
+}
+
+header {
+  padding: 32px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.subtitle {
+  opacity: 0.8;
+}
+
+/* Layout */
+main {
+  padding: 32px;
+  max-width: 900px;
+}
+
+.intro {
+  margin-bottom: 32px;
+}
+
+/* Figma card */
+.figma-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.figma-card.hovered {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(255, 156, 207, 0.4);
+}
+
+.figma-card h2 {
+  margin-top: 0;
+}
+
+/* Link */
+.figma-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: #ff9dcf;
+  color: #2b1a1f;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  padding: 32px;
+  opacity: 0.6;
+}
