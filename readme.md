@@ -31,7 +31,6 @@ The project presents weekly creative coding tasks (Weeks 1–10) as part of a si
 ├── week_10/ # Week 10 – Three.js Scene
 ├── documentation.md # Project documentation & reflection
 └── documentation-images/ # Screenshots used in documentation
-/
 
 
 ---
